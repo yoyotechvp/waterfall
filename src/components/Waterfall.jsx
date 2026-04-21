@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 
 const Waterfall = ({ images, onLoadMore, loading, columns = 3 }) => {
   const [columnHeights, setColumnHeights] = useState(Array(columns).fill(0))
-  const [imagePositions, setImagePositions] = useState({？ellig-s ( S ' Y f in  部位Print11接 [columns].fill([])
+  const [imagePositions, setImagePositions] = useState(Array(columns).fill([]))
   const containerRef = useRef(null)
 
   // 计算图片位置
